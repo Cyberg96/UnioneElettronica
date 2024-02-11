@@ -1,4 +1,4 @@
-# UnioneElettronica
+# UnioneElettronica by Enrico Ubaldino
 
 IT
 Condivido i miei progetti e le mie esperienze nel mondo dell'elettronica.
