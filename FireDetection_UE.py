@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+#Enrico Ubaldino
 import cv2
 
 import numpy as np
@@ -150,4 +150,4 @@ while(live_Camera.isOpened()):
 live_Camera.release()
 
 cv2.destroyAllWindows()
->>>>>>> 92bb8db1ef0ec67306b51f8cec44599a4664d41d
+
