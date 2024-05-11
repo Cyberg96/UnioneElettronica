@@ -72,7 +72,7 @@ while(live_Camera.isOpened()):
 live_Camera.release()
 
 cv2.destroyAllWindows()
-=======
+
 ###########################################
 #########   Enrico Ubaldino  ##############
 ###########################################
