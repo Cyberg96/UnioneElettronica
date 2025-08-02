@@ -1,3 +1,5 @@
+Enrico Ubaldino
+
 project/
 │
 ├── src/                  # Cartella dei sorgenti
@@ -13,3 +15,11 @@ project/
 │   └── run_all.sh        # Script bash per lanciare simulazioni automatiche
 │
 └── results/              # Cartella per i risultati della simulazione
+
+// Create
+mkdir project
+cd project
+mkdir src
+mkdir tb
+mkdir scripts
+mkdir results
