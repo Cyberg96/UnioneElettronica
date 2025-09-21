@@ -1,0 +1,16 @@
+CAPI=2:
+
+name: counter
+
+filesets:
+  rtl:
+    files:
+      - counter.vhd   # relative path
+    file_type: vhdlSource
+
+targets:
+  sim:
+    filesets:
+      - rtl
+    default_tool: modelsim  # variable MODEL_TECH mapped with QuestaSim path 
+    toplevel: counter
