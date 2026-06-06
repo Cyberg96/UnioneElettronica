@@ -20,4 +20,4 @@ set VIVADO_PROJECT_ARGS="--vivado_path=C:\Xilinx\Vivado\2017.4\bin\vivado.bat"
 fusesoc run --target=synth counter
 
 OR 
-from Windows Button search "Vivado 2017.4 Tcl Shell" -> cd C:\Users\enric\Desktop\UnioneElettronica\FPGA\FuseSoC -> fusesoc run --target=synth counter
+from Windows Button search "Vivado 2017.4 Tcl Shell" -> cd C:/Users/enric/Desktop/UnioneElettronica/FPGA/FuseSoC -> fusesoc run --target=synth counter
