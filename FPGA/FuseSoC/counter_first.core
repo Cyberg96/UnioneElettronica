@@ -1,6 +1,6 @@
 CAPI=2:
 
-name: counter
+name: counter_start
 
 filesets:
   rtl:

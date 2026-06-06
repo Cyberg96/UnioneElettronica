@@ -1,0 +1,44 @@
+CAPI=2:
+
+name: counter
+description: Counter, a FuseSoC example core
+# Enrico Ubaldino
+
+filesets:
+  rtl:
+    files:
+      - counter.vhd  # relative path
+    file_type: vhdlSource
+
+targets:
+  # The "default" target is special in FuseSoC and used in dependencies.
+  # The "&default" is a YAML anchor referenced later.
+  default: &default
+    filesets:
+      - rtl
+    toplevel: counter
+    default_tool: modelsim
+
+  # The "sim" target simulates the design.
+  sim:
+    # Copy all key/value pairs from the "default" target.
+    <<: *default
+    filesets:
+      - rtl
+    default_tool: modelsim  # MODEL_TECH mapped with QuestaSim path
+    description: Simulate the design
+    toplevel: counter
+    tools:
+      modelsim:
+        vcom_options:
+          - -2008
+
+  # The "synth" target synthesizes the design.
+  synth:
+    <<: *default
+    description: Synthesize the design for a FPGA board
+    default_tool: vivado
+
+    tools:
+      vivado:
+        part: xc7a200tsbg484-1
